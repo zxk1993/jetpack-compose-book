@@ -173,7 +173,7 @@ Modifier
     .height(IntrinsicSize.Max)
 ```
 
-接下来我们使用 <code>maxIntrinsicHeight</code> 即可获取到每个子组件在给定宽度下能够保证正确展示的最小高度，这个正确展示的高度是由子组件来保证的。再得到所有子组件的高度信息后，我们即可计算最大高度值，此值将会被设置为当前父组件（也就是当前自定义Layout）的固定高度。
+接下来我们使用 <code>minIntrinsicHeight</code> 即可获取到每个子组件在给定宽度下能够保证正确展示的最小高度，这个正确展示的高度是由子组件来保证的。再得到所有子组件的高度信息后，我们即可计算最大高度值，此值将会被设置为当前父组件（也就是当前自定义Layout）的固定高度。
 
 ```kotlin
 override fun IntrinsicMeasureScope.minIntrinsicHeight(
